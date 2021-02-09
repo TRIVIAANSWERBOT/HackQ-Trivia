@@ -21,8 +21,8 @@ class LiveShow:
     def __init__(self, headers):
         self.headers = headers
         self.show_question_summary = config.getboolean('LIVE', 'ShowQuestionSummary')
-        self.show_chat = config.getboolean('LIVE', 'ShowChat')
-        self.block_chat = False  # Block chat while question is active
+        #self.show_chat = config.getboolean('LIVE', 'ShowChat')
+        self.block_chat = True  # Block chat while question is active
         self.logger = logging.getLogger(__name__)
         self.logger.info('LiveShow initialized.')
 
@@ -68,7 +68,7 @@ class LiveShow:
             else:
                 self.logger.info('Disconnected.')
 
-        elif message_type == 'interaction' and self.show_chat and not self.block_chat:
+        #elif message_type == 'interaction' and self.show_chat and not self.block_chat:
             self.logger.info(f'{message["metadata"]["username"]}: {message["metadata"]["message"]}')
 
         elif message_type == 'question':
