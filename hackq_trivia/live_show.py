@@ -22,7 +22,7 @@ class LiveShow:
         self.headers = headers
         self.show_question_summary = config.getboolean('LIVE', 'ShowQuestionSummary')
         #self.show_chat = config.getboolean('LIVE', 'ShowChat')
-        self.block_chat = True  # Block chat while question is active
+        #self.block_chat = True  # Block chat while question is active
         self.logger = logging.getLogger(__name__)
         self.logger.info('LiveShow initialized.')
 
