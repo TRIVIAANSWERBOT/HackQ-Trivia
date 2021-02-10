@@ -69,7 +69,7 @@ class LiveShow:
                 self.logger.info('Disconnected.')
 
         #elif message_type == 'interaction' and self.show_chat and not self.block_chat:
-            self.logger.info(f'{message["metadata"]["username"]}: {message["metadata"]["message"]}')
+            #self.logger.info(f'{message["metadata"]["username"]}: {message["metadata"]["message"]}')
 
         elif message_type == 'question':
             question = anyascii(message['question'])
