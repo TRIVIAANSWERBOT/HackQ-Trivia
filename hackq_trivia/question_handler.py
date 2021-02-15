@@ -11,7 +11,7 @@ from hackq_trivia.config import config
 from hackq_trivia.searcher import Searcher
 
 from dhooks import Webhook, Embed
-hook=Webhook('https://discordapp.com/api/webhooks/809860337296998410/15fulHputU03WZUuKoIU6xzgX7-vtp33NkQfBUTRtMhJLr7r20ZbPr66NMrMWz9FC0Ei')
+hook=Webhook('https://discordapp.com/api/webhooks/755993463152967790/ZM00zhAfhkc-cJn-tgcPkwiHTNJwLEgNHVq-AeRZgihaYu6a23ORF6S_93byuqnplvgv')
 
 class QuestionHandler:
     def __init__(self):
